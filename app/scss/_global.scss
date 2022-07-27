@@ -1,0 +1,61 @@
+
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+    color: #fff;
+    @extend %ubuntu-light;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.page-section {
+    background: no-repeat url('../images/page-bg.jpg') top center;
+    background-size: cover; 
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+    }
+    &__wrapper {
+        z-index: 1;
+        position: relative;
+        padding: 74px 0 50px;
+        min-height: 100vh;
+    }
+}
+
+.title {
+    @extend %sf-regular;
+    font-size: 44px;
+    line-height: 53px;
+    margin-bottom: 55px;
+    padding-left: 25px;
+    padding-top: 200px;
+}
+
+.scroll__btn {
+    padding: 13px 0 40px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} 
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
