@@ -166,15 +166,33 @@
    &__items {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      padding-left: 25px;
    }
    &__item {
       margin-bottom: 100px;
       display: flex;
       align-items: flex-end;
       &:nth-child(even) {
-         margin-top: 17px;
+         transform: translateY(17px);
+         margin-left: 45px;
       }
+   }
+   &__item-1 {
+      position: relative;
+      &::before {
+         content: '';
+         height: 48px;
+         width: 245px;
+         background-image: url('../images/line-1.svg');
+         position: absolute;
+         top: 44px;
+         right: -66px;
+         background-repeat: no-repeat;
+         background-position: 0 0;
+      }
+   }
+   &__item-3 {
+      
    }
    &__num {
       @extend %ubuntu-bold;
