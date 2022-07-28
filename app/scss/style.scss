@@ -172,27 +172,53 @@
       margin-bottom: 100px;
       display: flex;
       align-items: flex-end;
-      &:nth-child(even) {
-         transform: translateY(17px);
-         margin-left: 45px;
-      }
    }
-   &__item-1 {
+   &__item-2 {
+      margin-left: 45px;
+      transform: translateY(27px);
+   }
+   &__item-4 {
+      margin-left: 45px;
+      transform: translate(40px, 17px);
+   }
+   &__item-1,
+   &__item-3 {
       position: relative;
-      &::before {
+      &::before,
+      &::after {
          content: '';
-         height: 48px;
-         width: 245px;
-         background-image: url('../images/line-1.svg');
          position: absolute;
-         top: 44px;
-         right: -66px;
          background-repeat: no-repeat;
          background-position: 0 0;
       }
    }
+   &__item-1 {
+      &::before {
+         height: 48px;
+         width: 245px;
+         background-image: url('../images/line-1.svg');
+         top: 44px;
+         right: -66px;
+      }
+   }
    &__item-3 {
-      
+      &::before {
+         background-image: url('../images/line-2.svg');
+         width: 463px;
+         height: 62px;
+         top: -80px;
+         right: -35px;
+      }
+      &::after {
+         background-image: url('../images/line-3.svg');
+         width: 254px;
+         height: 45px;
+         top: 52px;
+         right: -76px;
+      }
+   }
+   &__item-3 {
+      transform: translate(28px, 17px);
    }
    &__num {
       @extend %ubuntu-bold;
