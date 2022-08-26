@@ -47,6 +47,15 @@
       & + .menu__list-item {
          padding-left: 20px;
       }
+      &.active a {
+         text-decoration: underline;
+      }
+   }
+   &__list-phone {
+      display: none;
+   }
+   &__btn {
+      display: none;
    }
 }
 
@@ -145,7 +154,7 @@
    background-color: #fff;
    position: absolute;
    right: 0;
-   bottom: -51px;
+   bottom: -48px;
    cursor: pointer;
    z-index: 5;
    svg {
